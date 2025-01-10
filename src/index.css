@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  background: white;
+  color: black;
+  font-family: monospace;
+}
+
+input, textarea {
+  background: white !important;
+}
+
+/*  hover effects */
+button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 black;
+  transition: all 0.1s ease;
+}
+
+/* High contrast focus states */
+input:focus, textarea:focus {
+  outline: 4px solid black;
+  outline-offset: -4px;
+}
